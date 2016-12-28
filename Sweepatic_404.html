@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page not found!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            margin: 2em;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        .flex-container{
+           display: -webkit-flex;
+           display: flex;
+           -webkit-flex-direction: column;
+           flex-direction: column;
+           -webkit-align-items: stretch;
+           align-items: stretch;
+           -webkit-justify-content: space-around;
+           justify-content: space-around;
+        }
+
+        .flex-item {
+          width:auto;
+          height:auto;
+          margin:auto;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+  <ul class="flex-container">
+    <li class="flex-item"><h1>Oops!</h1></li>
+    <li class="flex-item"><p>Sorry, but the page you were trying to view does not exist.</p></li>
+    <li class="flex-item"><img src="https://s29.postimg.org/7dv1rg03r/sweepatic_shark_1000.png" alt="Sweepatic Shark"></li>
+  </ul>
+</body>
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
